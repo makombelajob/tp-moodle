@@ -1,0 +1,100 @@
+:root {
+    font-size : 16px;
+    --dsp-flex : flex;
+    --dsp-grid : grid;
+    --txt-alin : center;
+    --txt-dec : none;
+    --alin-items : center;
+    --clr-black : black;
+    --clr-white : white;
+    --bg-color : rgba(36, 50, 54, 0.075);
+    --bg-clor-2 : rgba(60, 117, 134, 0.267);
+    --lst-style : none;
+    --bx-shadow : 2px 2px 4px var(--clr-black);
+
+}
+body, html {
+    margin :0;
+    padding : 0;
+    background-color: var(--bg-color);
+    color: var(--clr-black);
+}
+* {
+    box-sizing: border-box;
+}
+
+/* style of header */
+header {
+    display: var(--dsp-flex);
+    justify-content: space-between;
+    align-items: var(--alin-items);
+    height: auto;
+    margin : 1rem;
+    margin-top : 0;
+    img {
+        border-radius: 50%;
+        width: 60px;
+    }
+    h2 a {
+        color: var(--clr-black);
+        text-decoration: var(--txt-dec);
+    }
+    ul {
+        list-style : var(--lst-style);
+        display: var(--dsp-flex);
+        gap :  0.7rem;
+        li a{
+            text-decoration: var(--txt-dec);
+            color: var(--clr-black);
+            font-size : 1.5rem;
+        }
+    }
+}
+
+/* main style */
+main {
+    border-top : 1px solid var(--clr-black);
+    text-align: var(--txt-alin);
+    margin-bottom: 0.3rem;
+    h1{
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    img {
+        border-radius: 50%;
+        width : 200px;
+    }
+    .grid {
+        display: var(--dsp-grid);
+        grid-template-columns: repeat(4, 1fr);
+        gap : 0.7rem;
+        h2{
+            grid-column: 1 / -1;
+        }
+    }
+    article {
+            box-shadow: var(--bx-shadow);
+            border-radius : 0.8rem;
+            background-color: var(--bg-clor-2);
+        }
+    .grid-2 {
+        display: var(--dsp-grid);
+        grid-template-columns: 1fr 1fr;
+        gap : 0.7rem;
+        h2 {
+            grid-column: 1 / -1;
+        }
+    }
+}
+
+/* footer */
+footer {
+    border-top : 1px solid var(--clr-black);
+    .footer-content {
+        display: var(--dsp-grid);
+        grid-template-columns: 1fr 1fr;
+        gap : 1rem;
+    }
+}
