@@ -1,0 +1,76 @@
+:root {
+    font-size : 16px;
+    --dsp-flex : flex;
+    --dsp-grid : grid;
+    --txt-alin : center;
+    --txt-dec : none;
+    --alin-items : center;
+    --clr-black : rgba(0, 0, 0, 0.76);
+    --clr-white : white;
+    --bg-color : rgba(36, 34, 34, 0.534);
+    --lst-style : none;
+    --bx-shadow : 2px 2px 4px var(--clr-black);
+
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+header {
+  h1 {
+    background-color: var(--bg-color);
+    color: var(--clr-white);
+    text-align: var(--txt-alin);
+    margin-top: 0;
+    padding : 1rem;
+  }
+  nav ul {
+    list-style: none;
+    text-align: var(--txt-alin);
+    background-color: var(--clr-black);
+    li {
+        display: inline;
+        padding: 1rem;
+        a{
+            color: var(--clr-white);
+            text-decoration: var(--txt-dec);
+        }
+    }
+  }  
+}
+main {
+  padding : 20px;
+  h2 {
+    text-align: var(--txt-alin);
+    font-size: 2rem;
+  }
+  section {
+    margin-left: 300px;
+    margin-right: 300px;
+    display: var(--dsp-flex);
+    flex-direction: column;
+    gap : 1rem;
+    article {
+      box-shadow: var(--bx-shadow);
+      display: var(--dsp-flex);
+      img {
+        width: 300px;
+        height: auto;
+      }
+      div {
+        margin-top: 40px;
+        
+      }
+    }
+  }
+}
+
+footer {
+    background-color: var(--clr-black);
+    text-align: var(--txt-alin);
+    color: var(--clr-white);
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
