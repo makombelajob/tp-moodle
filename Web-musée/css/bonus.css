@@ -16,9 +16,6 @@ body, html {
     margin: 0;
     padding: 0;
 }
-img {
-    width: 100%;
-}
 header nav {
     display: var(--dsp-flex);
     flex-direction: column;
@@ -48,41 +45,6 @@ header nav {
         }
     }
 }
-
-/* style main for the form page */
-main {
-    background-color: rgba(82, 80, 80, 0.212);
-    height: 100vh;
-    h2 {
-        text-align: var(--txt-alin);
-        margin-top: 100px;
-        margin: 0;
-        padding: 0.5rem;
-    }
-    section{
-        display: var(--dsp-flex);
-        gap : 1rem;
-        padding: 2rem;
-        position: absolute;
-        top : 50%;
-        left : 50%;
-        transform: translate(-50%, -50%);
-        article {
-            box-shadow: var(--bx-shadow);
-            border-radius: 10px;
-            background-color: var(--clr-white);
-        }
-        img{
-            width: 300px;
-        }
-        p{
-            margin : 0.1rem;
-            padding: 0.3rem;
-            text-align: var(--txt-alin);
-        }
-    }
-}
-/* footer */
 footer {
     background-color: var(--clr-black);
     text-align: var(--txt-alin);

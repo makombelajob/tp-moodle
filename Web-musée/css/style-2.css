@@ -59,16 +59,46 @@ main {
     gap : 1rem;
     padding: 2rem;
     article{
-      border : 1px solid black;
+      box-shadow: var(--bx-shadow);
+      border-radius: 5px;
       display: var(--dsp-flex);
       background-color: var(--clr-white);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.6s ease forwards;
       img {
         width: 300px;
         height: auto;
       }
     }
   }
+
+  /* bonus action */
+  article:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  article:nth-child(2){
+    animation-delay: 0.4s;
+  }
+  article:nth-child(3){
+    animation-delay: 0.6s;
+  }
+  
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* effet bonus */
+
+
 
 footer {
     background-color: var(--clr-black);
