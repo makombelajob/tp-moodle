@@ -45,6 +45,23 @@ header nav {
         }
     }
 }
+
+/* main style */
+main {
+    h2 {
+        text-align: var(--txt-alin);
+    }
+    .map {
+        iframe {
+            box-shadow: var(--bx-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: var(--bx-shadow);
+            }
+        }
+    }
+}
 footer {
     background-color: var(--clr-black);
     text-align: var(--txt-alin);
